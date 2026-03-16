@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories by Memories | Premium Wedding & Lifestyle Photography</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Premium Font Combination -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- PREMIUM LOADING ANIMATION WITH UPDATED CAMERA DESIGN -->
+  <div id="loading" class="loading-screen">
+    <div class="loader-content">
+      <div class="camera-lens">
+        <div class="lens-outer">
+          <div class="lens-middle">
+            <div class="lens-inner"></div>
+          </div>
+        </div>
+        <div class="lens-reflection"></div>
+        <div class="camera-strap"></div>
+      </div>
+      <div class="flash-effect" id="flashEffect"></div>
+      <h2 class="loader-title" id="loaderTitle">Stories by Memories</h2>
+      <p class="loader-subtitle" id="loaderSubtitle">Capturing moments...</p>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div class="progress-container">
+    <div class="progress-bar-scroll" id="progressBar"></div>
+  </div>
+
+  <!-- STICKY HEADER with scroll effect -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="company-name">Stories by Memories</span>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#photographer" class="nav-link">Photographer</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#instagram" class="nav-link">Instagram</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FLOATING SOCIAL BUTTONS STACK -->
+  <div class="float-buttons">
+    <a href="https://www.instagram.com/stories_by__memories?igsh=MXVqZDNuZ3o1aGh2eA%3D%3D" class="float-btn instagram-float" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/918861247675?text=Hello%20Stories%20by%20Memories%2C%0A%0AI%20would%20like%20to%20book%20a%20photoshoot%20session.%20Please%20share%20the%20details." class="float-btn whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION WITH BACKGROUND SLIDESHOW & KEN BURNS EFFECT -->
+    <section id="home" class="hero">
+      <div class="slideshow">
+        <div class="slide active ken-burns" style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+        <div class="slide ken-burns" style="background-image: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+        <div class="slide ken-burns" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+        <div class="slide ken-burns" style="background-image: url('https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title animate-text" data-aos="fade-up" data-aos-delay="300">Stories by Memories</h1>
+        <p class="hero-tagline animate-text" data-aos="fade-up" data-aos-delay="600">Capturing Your Moments, Creating Timeless Memories</p>
+        <p class="hero-description animate-text" data-aos="fade-up" data-aos-delay="900">Every moment tells a story. We capture emotions, celebrations, and memories that last forever through our cinematic photography.</p>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1200">
+          <a href="#gallery" class="btn btn-primary">View Gallery</a>
+          <a href="#" class="btn btn-outline" id="bookNowBtn">Book a Session</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PHILOSOPHY SECTION -->
+    <section class="philosophy section-padding" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Our Philosophy</h2>
+        <div class="philosophy-content" data-aos="fade-up" data-aos-delay="200">
+          <p>At Stories by Memories, we believe every photograph should tell a story. Our approach is simple — capture real emotions, natural light, and genuine moments. Whether it is a wedding, a celebration, or a quiet portrait session, our goal is to preserve memories that will last for generations.</p>
+          <div class="philosophy-stats">
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Happy Couples</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Destinations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section-padding light-bg">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">About Stories by Memories</h2>
+        <div class="about-content" data-aos="fade-up">
+          <p>Stories by Memories is a professional photography brand dedicated to capturing real emotions and unforgettable moments. Our goal is to turn your special occasions into beautiful visual stories that you can cherish for a lifetime.</p>
+          <p>We specialize in capturing natural, candid, and artistic photographs that reflect the true essence of every event. With creativity, passion, and attention to detail, we ensure that every picture tells a story worth remembering.</p>
+          <p>Whether it is a wedding, celebration, portrait session, or a special milestone, we focus on preserving those moments with elegance and authenticity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET THE PHOTOGRAPHER SECTION -->
+    <section id="photographer" class="photographer section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Meet The Photographer</h2>
+        <div class="photographer-grid">
+          <div class="photographer-image" data-aos="fade-right" data-aos-delay="200">
+            <div class="image-frame">
+              <img src="" alt="Pramod - Lead Photographer" class="lazy-img" data-src="">
+              <div class="signature-badge">
+                <span class="signature">Pramod</span>
+              </div>
+            </div>
+          </div>
+          <div class="photographer-content" data-aos="fade-left" data-aos-delay="400">
+            <h3 class="photographer-name">Pramod – Founder & Lead Photographer</h3>
+            <p>Pramod is the creative mind behind Stories by Memories. With a deep passion for storytelling through photography, he believes that every moment holds an emotion worth capturing.</p>
+            <p>Over the years, Pramod has developed a unique style that blends candid moments with artistic composition. His work focuses on capturing real emotions, natural expressions, and timeless memories that couples and families can cherish forever.</p>
+            <p>For Pramod, photography is not just about taking pictures — it is about preserving stories. Every wedding, celebration, and portrait session is approached with creativity, dedication, and attention to detail.</p>
+            <div class="experience-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-camera"></i>
+                <span>8+ years experience</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-heart"></i>
+                <span>500+ shoots completed</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-ring"></i>
+                <span>Wedding & lifestyle specialist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION with Icons -->
+    <section id="services" class="services section-padding light-bg">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Our Photography Services</h2>
+        <p class="section-subtitle" data-aos="fade-up">We provide professional photography services designed to capture your most important moments with creativity and precision.</p>
+        <div class="services-grid">
+          <div class="service-card" data-aos="flip-up" data-aos-delay="100">
+            <div class="service-icon"><i class="fas fa-ring"></i></div>
+            <h4>Wedding Photography</h4>
+            <p>Capture every emotion, smile, and moment from your special day with our elegant wedding photography.</p>
+          </div>
+          <div class="service-card" data-aos="flip-up" data-aos-delay="200">
+            <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+            <h4>Pre-Wedding Shoots</h4>
+            <p>Creative and romantic photoshoots that tell the beautiful story of your journey together.</p>
+          </div>
+          <div class="service-card" data-aos="flip-up" data-aos-delay="300">
+            <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h4>Event Photography</h4>
+            <p>Professional coverage for birthdays, corporate events, parties, and celebrations.</p>
+          </div>
+          <div class="service-card" data-aos="flip-up" data-aos-delay="400">
+            <div class="service-icon"><i class="fas fa-portrait"></i></div>
+            <h4>Portrait Photography</h4>
+            <p>High-quality portrait sessions for individuals, couples, families, and personal branding.</p>
+          </div>
+          <div class="service-card" data-aos="flip-up" data-aos-delay="500">
+            <div class="service-icon"><i class="fas fa-baby"></i></div>
+            <h4>Baby & Family Photography</h4>
+            <p>Capturing precious family moments and adorable milestones of your little ones.</p>
+          </div>
+          <div class="service-card" data-aos="flip-up" data-aos-delay="600">
+            <div class="service-icon"><i class="fas fa-mountain"></i></div>
+            <h4>Destination Shoots</h4>
+            <p>Travel with us to exotic locations for breathtaking destination photography.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK SECTION -->
+    <section id="featured" class="featured-work section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Featured Moments</h2>
+        <p class="section-subtitle" data-aos="fade-up">Explore some of our favorite captures that showcase our photography style and creativity. Each photograph reflects emotion, beauty, and storytelling through the lens.</p>
+        <div class="featured-grid" id="featuredGrid">
+          <div class="featured-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="image-wrapper">
+              <img src="" alt="Wedding" class="lazy-img" data-src="">
+              <div class="overlay">
+                <span>Wedding</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="image-wrapper">
+              <img src="" alt="Pre-Wedding" class="lazy-img" data-src="">
+              <div class="overlay">
+                <span>Pre-Wedding</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="" alt="Portrait" class="lazy-img" data-src="">
+              <div class="overlay">
+                <span>Portrait</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item" data-aos="zoom-in" data-aos-delay="400">
+            <div class="image-wrapper">
+              <img src="" alt="Family" class="lazy-img" data-src="">
+              <div class="overlay">
+                <span>Family</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item" data-aos="zoom-in" data-aos-delay="500">
+            <div class="image-wrapper">
+              <img src="" alt="Event" class="lazy-img" data-src="">
+              <div class="overlay">
+                <span>Event</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item" data-aos="zoom-in" data-aos-delay="600">
+            <div class="image-wrapper">
+              <img src="" alt="Candid" class="lazy-img" data-src="">
+              <div class="overlay">
+                <span>Candid</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center-btn">
+          <a href="#gallery" class="btn btn-primary">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION with Uniform Grid Layout -->
+    <section id="gallery" class="gallery section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Our Gallery</h2>
+        <p class="section-subtitle" data-aos="fade-up">Explore a collection of our finest photographs capturing real emotions, beautiful celebrations, and unforgettable moments.</p>
+        
+        <!-- Category Tabs with Icons -->
+        <div class="filter-tabs" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All</button>
+          <button class="filter-btn" data-filter="wedding"><i class="fas fa-ring"></i> Wedding</button>
+          <button class="filter-btn" data-filter="prewedding"><i class="fas fa-camera-retro"></i> Pre-Wedding</button>
+          <button class="filter-btn" data-filter="events"><i class="fas fa-glass-cheers"></i> Events</button>
+          <button class="filter-btn" data-filter="portraits"><i class="fas fa-portrait"></i> Portrait</button>
+          <button class="filter-btn" data-filter="family"><i class="fas fa-baby"></i> Family</button>
+        </div>
+        
+        <!-- Uniform Grid Gallery -->
+        <div class="gallery-grid-uniform" id="galleryGrid">
+          <div class="gallery-item" data-category="wedding" data-aos="fade-up">
+            <img src="" alt="Wedding" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-ring"></i> Wedding</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="prewedding" data-aos="fade-up" data-aos-delay="100">
+            <img src="" alt="Pre-Wedding" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-camera-retro"></i> Pre-Wedding</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+            <img src="" alt="Event" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-glass-cheers"></i> Event</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="portraits" data-aos="fade-up" data-aos-delay="300">
+            <img src="" alt="Portrait" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-portrait"></i> Portrait</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="family" data-aos="fade-up" data-aos-delay="400">
+            <img src="" alt="Family" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-baby"></i> Family</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="wedding" data-aos="fade-up" data-aos-delay="500">
+            <img src="" alt="Wedding" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-ring"></i> Wedding</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="portraits" data-aos="fade-up" data-aos-delay="600">
+            <img src="" alt="Portrait" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-portrait"></i> Portrait</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="family" data-aos="fade-up" data-aos-delay="700">
+            <img src="" alt="Baby" class="lazy-img" data-src="">
+            <div class="gallery-overlay">
+              <span class="category"><i class="fas fa-baby"></i> Baby</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <span class="lightbox-prev"><i class="fas fa-chevron-left"></i></span>
+      <div class="lightbox-content" id="lightboxContent"></div>
+      <span class="lightbox-next"><i class="fas fa-chevron-right"></i></span>
+    </div>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials section-padding light-bg">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">What Our Clients Say</h2>
+        <div class="testimonials-grid" data-aos="fade-up">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="" alt="Priya" class="client-photo lazy-img" data-src="">
+              <div class="client-info">
+                <h4>Priya & Ankit</h4>
+                <p>Bangalore Wedding</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">"Stories by Memories captured our wedding beautifully. Every photo is filled with emotion and perfection. Pramod's attention to detail is amazing!"</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="" alt="Rajesh" class="client-photo lazy-img" data-src="">
+              <div class="client-info">
+                <h4>Rajesh & Neha</h4>
+                <p>Mumbai Pre-Wedding</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">"The team was professional, friendly, and incredibly talented. The pre-wedding shoot at the beach turned out magical. Highly recommended!"</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="" alt="Meera" class="client-photo lazy-img" data-src="">
+              <div class="client-info">
+                <h4>Meera & Arjun</h4>
+                <p>Family Portrait</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-text">"We loved every moment of our photoshoot with our kids. The photos truly tell our family story. Thank you Stories by Memories!"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMPLIFIED INSTAGRAM SECTION -->
+    <section id="instagram" class="instagram-simple section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Follow Us on Instagram</h2>
+        <div class="instagram-simple-content" data-aos="fade-up">
+          <i class="fab fa-instagram instagram-simple-icon"></i>
+          <h3 class="instagram-simple-handle">@stories_by__memories</h3>
+          <p class="instagram-simple-text">Join our journey and see real moments captured during weddings, events, and special shoots.</p>
+          <a href="https://www.instagram.com/stories_by__memories?igsh=MXVqZDNuZ3o1aGh2eA%3D%3D" target="_blank" class="btn btn-primary instagram-simple-btn">
+            <i class="fab fa-instagram"></i> View More On Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION SECTION -->
+    <section id="cta" class="cta-section section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Let's Capture Your Special Moments</h2>
+        <p class="cta-text" data-aos="fade-up" data-aos-delay="200">Looking for a professional photographer for your wedding, event, or special occasion? Let Stories by Memories turn your moments into timeless memories.</p>
+        <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400" id="bookNowBtn2">Book Your Shoot</a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-right">Contact Us</h2>
+        <p class="section-subtitle" data-aos="fade-up">Have a project in mind or planning a special event? Get in touch with Stories by Memories and let us capture your beautiful moments.</p>
+        <div class="contact-grid">
+          <div class="contact-details" data-aos="fade-right">
+            <h3>Stories by Memories</h3>
+            <p><i class="fas fa-phone-alt"></i> +91 88612 47675</p>
+            <p><i class="fas fa-envelope"></i> contact@storiesbymemories.com</p>
+            <p><i class="fab fa-instagram"></i> @stories_by__memories</p>
+            <p><i class="fab fa-whatsapp"></i> +91 88612 47675</p>
+            <p><i class="fas fa-map-pin"></i> Channapatana,Karnataka,India</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ENHANCED FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Stories by Memories</h3>
+          <p>Capturing timeless moments through photography. Every picture tells a story worth remembering.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/stories_by__memories?igsh=MXVqZDNuZ3o1aGh2eA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918861247675" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#photographer">Photographer</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-phone"></i> +91 88612 47675</p>
+          <p><i class="fas fa-envelope"></i> contact@storiesbymemories.com</p>
+          <p><i class="fab fa-instagram"></i> @stories_by__memories</p>
+          <p><i class="fab fa-whatsapp"></i> +91 88612 47675</p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2026 Stories by Memories. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for timeless memories</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
